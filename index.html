@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея цифрового искусства</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎨 Галерея цифрового искусства</h1>
+    </header>
+
+    <main>
+        <!-- 1. Круглые аватары авторов работ -->
+        <section class="section-box">
+            <h2>Наши художники</h2>
+            <div class="artist-container">
+                <div class="artist">
+                    <img src="https://placehold.co/200x200/ff9a9e/ffffff?text=Art1" alt="Аватар 1" class="rounded-img">
+                    <p class="artist-name">Анна К.</p>
+                </div>
+                <div class="artist">
+                    <img src="https://placehold.co/200x200/a1c4fd/ffffff?text=Art2" alt="Аватар 2" class="rounded-img">
+                    <p class="artist-name">Макс Р.</p>
+                </div>
+                <div class="artist">
+                    <img src="https://placehold.co/200x200/c2e9fb/333333?text=Art3" alt="Аватар 3" class="rounded-img">
+                    <p class="artist-name">Елена С.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Адаптивное видео (timelapse) -->
+        <section class="section-box">
+            <h2>Timelapse создания работы</h2>
+            <video controls class="video-responsive">
+                <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </section>
+
+        <!-- 3. Подсказка по клику рядом с кнопкой -->
+        <section class="section-box tooltip-section">
+            <button id="tooltipBtn">Связаться с художником</button>
+            <div id="tooltip">Напишите нам на email: art@gallery.ru</div>
+        </section>
+
+        <!-- 4. Кастомный скроллбар для длинного описания -->
+        <section class="section-box">
+            <h2>Описание коллекции</h2>
+            <div class="custom-scrollbar">
+                <p>Добро пожаловать в нашу цифровую галерею. Здесь собраны лучшие работы современных цифровых художников, работающих в жанрах фэнтези, sci-fi и абстракции. Каждая картина создана с использованием передовых технологий: от 3D-моделирования до нейросетевой генерации с последующей ручной доработкой.</p>
+                <br><p>Наши авторы уделяют особое внимание деталям, свету и композиции. Мы верим, что цифровое искусство — это не просто набор пикселей, а полноценная форма самовыражения, способная вызывать те же эмоции, что и классическая живопись. Прокручивайте блок, чтобы ознакомиться с описаниями процессов создания, используемыми программами (Photoshop, Blender, Procreate) и философией каждого автора.</p>
+                <br><p>Все работы доступны для приобретения в высоком разрешении (до 8K). Покупая арт, вы получаете не только файл, но и сертификат подлинности. Спасибо, что поддерживаете цифровое творчество!</p>
+                <br><p>Дополнительная информация о лицензиях, условиях использования и партнерских программах доступна в разделе FAQ. Мы постоянно обновляем галерею новыми именами и стилями. Следите за анонсами в наших социальных сетях.</p>
+                <br><p>Контент для демонстрации работы кастомного скроллбара продолжает заполняться, чтобы вы могли оценить плавность прокрутки и визуальное оформление ползунка в соответствии с общим дизайном сайта.</p>
+            </div>
+        </section>
+
+        <!-- 5. Кнопка с градиентом «Купить арт» -->
+        <section class="section-box">
+            <button class="btn-gradient-buy">Купить арт</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
